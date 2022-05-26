@@ -1,0 +1,24 @@
+The true SpaceMouse can input rotate ±x, rotate ±y, rotate ±z, pan vertical, pan horizontal, and zoom ±, 6 degrees of freedom total.
+
+The SpaceMouse uses 6 optoelectrical sensors to get the full 6 DoF, see https://patents.google.com/patent/US7296463B2 for a patent of their old design.
+
+Newer versions of the SpaceMouse only use three sensors chips, but they look to still be optoelectrical. Teardowns:
+https://www.fictiv.com/teardowns/spacenavigator-3d-mouse-teardown
+https://www.eevblog.com/forum/reviews/spacemouse-pro-teardown/
+
+For more percisce 
+
+Options for sensing inputs are:
+  + Magnetic displacement sensors
+  + Optoelectrical sensors
+  + Potentiometers 
+  + Joysticks (limited to 3 DoF)
+  + Hall Effect sensors
+  + Strain guage
+  + 6 DoF sensors (Detect acceleration, not position)
+
+Some combination of sensors may be required to get a fully fuctional input device. 
+
+One solution may be magnetic displacement sensors, or Anisotropic Magneto-Resistive (AMR) sensors, Like the HMC1501. These sensors can detect rotation and angle in a single chip.
+
+QMK firmware may be usable for a device of this nature and supports macros, multiple layouts, and LCD displays.
